@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maya McKinney</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <!--top header containing background hero image & button-->
+    <header class="top" id="home">
+      <h1>Hi! I'm Maya Mckinney.</h1>
+      <p>I'm a full stack web developer.</p>
+      <button><a href="#about">Learn more about me & my work.</a></button>
+    </header>
+    <!--avoid weird flex behavior with class-->
+    <nav class="flex">
+      <!--nested div class allows for centering to work with li element-->
+      <div class="display-nav">
+      <!--navigation bar below image that links to rest of page-->
+      <ul>
+      <li class="nav-link"><a href=#top>Home</a></li>
+      <li class="nav-link"><a href=#about>About</a></li>
+      <li class="nav-link"><a href=#portfolio>Porfolio</a></li>
+      <li class="nav-link"><a href=#contact>Contact</a></li> 
+      </ul>
+      </div>
+    </nav>
+ 
+  <div class="flex">
+    <section class="card">
+      <h2 id="about">About Me</h2>
+        <!--skills to be updated as you go through bootcamp-->
+        <div class="about-skills">
+          <ul>
+            <li>Web Design</li>
+            <li>HTML/CSS/PHP/JavaScript</li>
+            <li>Node.ls</li>
+            <li>React</li>
+          </ul>
+        </div> 
+        <!--update image with proper headshot of yourself. text formatted to avoid flexbox weirdness. can update with more experiance-->
+      <p><img src="https://placekitten.com/200/200" class="photo-of-me" alt="A photo of Maya McKinney">
+       Howdy! Name's Maya. I live in Tucson, Arizona - and I often try to keep my coding as sunny as the state. After spending five years in the funeral business in a wide variety of roles, but my one true love has always been 1s & 0s. I've been actively working on building my portfolio since graduating bootcamp in March. I'm incredibly passionate about design, and love to collaborate on a wide variety of projects. Besides programming, I enjoy to crochet, knit, and play video games with my friends. </p>
+    </section>
+  </div>
+
+  <div class="flex">
+    <section class="card">
+      <h2 id="portfolio">My Work</h2>
+      <!--images with links to various projects-->
+      <a href="https://mayamckinney.github.io/prework-study-guide/"><img class="work-images" src="https://i.ibb.co/wd42n5w/216515.jpg"></a> <a href="https://mayamckinney.github.io/module-one-challenge/"><img class="work-images" src="https://i.ibb.co/fHBwcjg/651635168.jpg"></a>
+    </section>
+  </div>
+
+  <div class="flex">
+    <section class="card">
+      <!--contact info, to be updated when necessary-->
+      <h2 id="contact">Contact me</h2>
+        <ul>
+          <li><a href="mailto:mayamckinney0306@gmail.com">Email</a></li>
+          <li><a href="https://github.com/mayamckinney/">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/maya-mckinney-b22511244/">LinkedIn</a></li>
+          <li><a href="https://dribbble.com/mayamckinney?onboarding=true">Dribbble</a></li>
+        </ul>
+    </section>
+  </div>
+  </body>
+</html>

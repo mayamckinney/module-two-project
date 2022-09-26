@@ -1,0 +1,181 @@
+/* declaring variables for colors */
+:root {
+    --background-color: #c7f0d2;
+    --nav-color: #a1b391;
+    --border-color: #3b4034;
+    --button-background: #f0f5e9;
+    --card-background: #BAD2B7;
+  }
+  
+  /* set font, background color */
+  body {
+    background-color: var(--background-color);
+    font-family: Trebuchet MS, sans-serif;
+  }
+  
+  /* set link color to black & underline... text-thickness does work */
+  a:link {
+    color: black;
+    text-decoration: underline var(--border-color);
+    text-decoration-thickness: 2px;
+  }
+
+  /* link fade change to button-background, adding extra lines to ensure accessability on all browsers */
+  a:hover {
+    color: var(--button-background);
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+  }
+
+  /* visited link will be black with no fade */
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* contains hero image for the background of the top "welcome" bar */
+  /* contains flex box & borders for the header */
+  .top {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    text-transform: lowercase;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/004/608/058/original/pastel-green-watercolor-background-free-vector.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+  }
+  
+  /* controls the color of JUST the header saying maya mckinney */
+  .top > h1 {
+    color: #363833;
+    margin-top: 100px;
+  
+  }
+  
+  /* controls color of text underneath h1 */
+  .top > p {
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  /* button that leads to about section */
+  button {
+    text-transform: lowercase;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    background-color: var(--button-background);
+    border: 2px solid var(--border-color);
+    padding: 10px 32px;
+    border-radius: 30px;
+  }
+  
+  /* button fade on hover */
+  button:hover {
+    background-color: var(--border-color);
+    color: var(--button-background);
+    border-color: var(--button-background);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+  }
+  
+  /* flexbox for all cards - seperate div in html to allow for different displays inside container */
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /*nav bar link colors & box */
+  nav {
+    background-color: var(--nav-color);
+    border: 2px solid var(--border-color);
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  /* nested in between nav & ul to allow centering in nav bar */
+  
+.display-nav {
+    display: table !important;   /* allow the centering to work w/ !important tag */
+    margin: 0 auto;
+}
+
+/* ONLY changes ul nested inside of nav element */
+  nav > ul {
+    list-style-type: none;
+    background-color: var(--nav-color);
+    text-align: left;
+  }
+
+
+ /* display box to have nav links display side by side */ 
+  .nav-link {
+    display: inline;
+    background-color: var(--nav-color);
+    margin: 20px;
+  }
+  
+  /* fade for the just the links in nav bar */
+  .nav-link:hover {
+    color: var(--button-background);
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+  }
+  
+  /* adjust display for each section */
+  .card {
+    background-color: var(--card-background);
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid var(--border-color);
+  }
+  
+ h2 {
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+
+  /* adjusts photo of myself under "about" section, allows to remain left with padding for text */
+  .photo-of-me {
+      float: left;
+      width: 150px;
+      border-radius: 65px;
+      padding: 40px;
+  }
+
+  /* adjust images in "work card" */
+  .work-images {
+    width: 300px;
+    border-radius: 70px;
+    padding: 20px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* accessability for IE 6-9 & safari*/
+  }
+
+  /* will change the image into color when they are hovered over */
+  .work-images:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+  }
